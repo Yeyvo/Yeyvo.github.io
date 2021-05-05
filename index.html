@@ -3,15 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Hamza CHAFKAN">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+    <script src="./ressources/script/particle.js"></script>
+    <script src="./ressources/script/particle.js"></script>
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
+
     <link rel="stylesheet" href="./ressources/style/style.css">
     <link rel="stylesheet" href="./ressources/style/card.css">
     <link rel="stylesheet" href="./ressources/style/button.css">
     <link rel="stylesheet" href="./ressources/style/timeline.css">
     <link rel="stylesheet" href="./ressources/style/particle.css">
     <link rel="stylesheet" href="./ressources/style/menu.css">
-    <title>Portfolio-Yeyvo</title>
+    <link rel="shortcut icon" href="./ressources/img/favico.ico" />
+    <script src="./ressources/script/script.js"></script>
+    <title>Portfolio | Hamza CHAFKAN</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQWBK0JS3E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YQWBK0JS3E', {
+            cookie_flags: 'SameSite=None;Secure'
+        });
+    </script>
+
 </head>
 
 <body>
@@ -38,7 +63,7 @@
             <div id="particles-js2"></div>
 
 
-            <object data="./ressources/img/hello.svg"> </object>
+            <object data="./ressources/img/hello.svg" class=""> </object>
             <div class="hey">
                 <div class="first-presentation">
                     <p>Hey i'm </p>
@@ -48,14 +73,14 @@
                 <div class="wrapper">
                     <a href="https://www.linkedin.com/in/hamza-chafkan/">
                         <div class="button _1">
-                            <span><img src="./ressources/img/linkeding.png" alt="" style="height: 30px;"></span>
+                            <span><img src="./ressources/img/linkeding.png" alt="" style="height: 30px;" class="img-hello"></span>
                             <div class="back"></div>
                         </div>
                     </a>
                     <a href="https://github.com/Yeyvo">
                         <div class="button _1">
                             <span>
-                                <img src="./ressources/img/github.png" alt="" style="height: 30px;">
+                                <img src="./ressources/img/github.png" alt="" style="height: 30px;" class="img-hello">
                             </span>
                             <div class="back"></div>
                         </div>
@@ -106,6 +131,7 @@
             </div>
             <div class="card-repo cards-wrapper">
                 <div class="repo-card" data-repo="Yeyvo/MyWay"></div>
+                <div class="repo-card" data-repo="Yeyvo/Yeyvo.github.io"></div>
                 <div class="repo-card" data-repo="Yeyvo/sqlite-clone"></div>
                 <div class="repo-card" data-repo="Yeyvo/FactionMod"></div>
                 <div class="repo-card" data-repo="Yeyvo/pokiimap"></div>
@@ -125,7 +151,7 @@
                             <span class="flag">EMI</span>
                             <span class="time-wrapper"><span class="time">2020 - Present</span></span>
                         </div>
-                        <div class="desc">Started stuying at Ecole mohammedia d'ingénieurs as a computer science Engineer</div>
+                        <div class="desc">Started stuying at Ecole mohammedia d'ingénieurs as a computer science Engineer ( I'm also a member of Forum EMI-Entreprises)</div>
                     </div>
                 </li>
 
@@ -133,7 +159,7 @@
                     <div class="direction-l">
                         <div class="flag-wrapper">
                             <span class="flag">Python</span>
-                            <span class="time-wrapper"><span class="time">2014 - Present</span></span>
+                            <span class="time-wrapper"><span class="time">2018 - Present</span></span>
                         </div>
                     </div>
                 </li>
@@ -148,6 +174,14 @@
                     </div>
                 </li>
 
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Volunteer at Fikra!</span>
+                            <span class="time-wrapper"><span class="time">2017 - 2018</span></span>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="direction-l">
                         <div class="flag-wrapper">
@@ -274,11 +308,6 @@
             </filter>
         </svg>
     </footer>
-
-    <script src="./ressources/script/particle.js"></script>
-    <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
-    <script src="./ressources/script/script.js"></script>
-    <script src="./ressources/script/scrollreveal.js"></script>
 </body>
 
 </html>

@@ -29,6 +29,17 @@ a:hover {
   color: var(--color);
 }
 
+.first-presentation,
+.fin,
+.github,
+.repo-card,
+.timeline,
+.desc,
+.time-wrapper,
+.img-hello {
+  visibility: hidden;
+}
+
 body {
   margin: 0;
   color: white;
@@ -40,7 +51,7 @@ body {
   min-height: 90vh;
   overflow: hidden;
   z-index: 5;
-  margin: repeat(2, auto 0);
+  // margin: auto 0 auto 0;
 }
 
 @keyframes pisca {
@@ -154,6 +165,7 @@ header {
   }
 
   object {
+    margin-top: 20px;
     align-self: center;
   }
 }
@@ -289,16 +301,26 @@ footer {
       display: none;
     }
   }
-
-  #prese {
-    margin: auto;
-  }
 }
 
 @media screen and (max-width: 600px) {
   #hello {
     object {
       display: none;
+    }
+  }
+
+  #prese {
+    //
+    .presentat {
+      // margin: auto;
+
+      align-items: center;
+    }
+
+    .button {
+      width: calc(0.7 * 200px);
+      height: calc(0.6 * 100px);
     }
   }
 }
@@ -317,11 +339,36 @@ footer {
   .fin {
     width: 80%;
   }
+  #prese {
+    //
+    .button {
+      width: calc(0.6 * 200px);
+      height: calc(0.5 * 100px);
+    }
+  }
 }
+
+@media screen and (max-width: 420px) {
+  #prese {
+    //
+    object {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .github {
     .account {
       width: calc(0.79 * 445px);
+    }
+  }
+  #prese {
+    //
+    .button {
+      width: calc(0.5 * 200px);
+      height: calc(0.4 * 100px);
     }
   }
 }

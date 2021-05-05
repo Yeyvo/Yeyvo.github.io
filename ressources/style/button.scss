@@ -1,6 +1,6 @@
 :root {
-  --height: 100px;
-  --width: 200px;
+  // --height: 100px;
+  // --width: 200px;
   --color: rgb(108, 99, 255);
 }
 
@@ -12,8 +12,8 @@
 
 .button {
   position: relative;
-  width: calc(0.8 * var(--width));
-  height: calc(0.7 * var(--height));
+  width: calc(0.8 * 200px);
+  height: calc(0.7 * 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +62,8 @@
   }
 
   &:hover .back {
-    width: calc(2 * var(--width));
-    height: calc(2 * var(--height));
+    width: calc(2 * 200px);
+    height: calc(2 * 100px);
   }
 }
 
