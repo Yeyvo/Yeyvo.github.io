@@ -45,13 +45,14 @@
     position: absolute;
     top: 53px;
     right: 0;
-    width: 50vw;
-    height: 100vh;
+    width: auto;
+    height: 20%;
     z-index: 999;
     background-color: var(--background-2);
     flex-direction: column;
     padding: 25px 0px 100px 0px;
     visibility: hidden;
+    border-radius: 3%;
     li {
       display: table;
     }
