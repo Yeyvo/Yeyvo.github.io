@@ -140,7 +140,6 @@ window.addEventListener("load", (event) => {
   sr.reveal(".fin", { delay: 200 });
   sr.reveal(".first-presentation", { delay: 400 });
   sr.reveal(".github", { delay: 200 });
-  sr.reveal(".repo-card", { delay: 300, interval: 200 });
   sr.reveal(".card", { delay: 400, interval: 200 });
   sr.reveal(".img-hello", { delay: 400 });
   sr.reveal(".timeline", { delay: 200 });
@@ -150,4 +149,27 @@ window.addEventListener("load", (event) => {
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
+
+  const projectcard = document.getElementById("repo-wrapper");
+  fetch("https://api.github.com/users/Yeyvo/repos")
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+    })
+    .then((data) => {
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].fork == false) {
+          const full_name = data[i].full_name;
+          const card = document.createElement("div");
+          card.classList.add("repo-card");
+          card.setAttribute("data-repo", full_name);
+          projectcard.appendChild(card);
+          sr.reveal(".repo-card", { delay: 300, interval: 200 });
+        }
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
