@@ -151,6 +151,9 @@ window.addEventListener("load", (event) => {
   };
 
   const projectcard = document.getElementById("repo-wrapper");
+
+  var forkWhitelist = [];
+
   fetch("https://api.github.com/users/Yeyvo/repos")
     .then((res) => {
       if (res.ok) {
@@ -159,7 +162,10 @@ window.addEventListener("load", (event) => {
     })
     .then((data) => {
       for (var i = 0; i < data.length; i++) {
-        if (data[i].fork == false) {
+        if (
+          forkWhitelist.indexOf(data[i].full_name) != -1 ||
+          data[i].fork == false
+        ) {
           const full_name = data[i].full_name;
           const card = document.createElement("div");
           card.classList.add("repo-card");
