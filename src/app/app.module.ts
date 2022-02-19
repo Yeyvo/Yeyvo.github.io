@@ -1,0 +1,32 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './includes/header/header.component';
+import { FooterComponent } from './includes/footer/footer.component';
+import { FirstComponent } from './first/first.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
+import { CertifsComponent } from './certifs/certifs.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    FirstComponent,
+    PresentationComponent,
+    ProjectsComponent,
+    EducationComponent,
+    CertifsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

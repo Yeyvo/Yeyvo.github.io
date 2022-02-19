@@ -1,0 +1,14 @@
+/* CERTIF */
+#certif {
+  background-color: var(--background-2);
+  display: flex;
+  .card-grid-space {
+    & > a {
+      max-width: 60%;
+      margin: auto;
+    }
+  }
+}
+
+
+

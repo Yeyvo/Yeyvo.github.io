@@ -1,0 +1,54 @@
+/* HELLO */
+
+#hello {
+  // position: relative;
+  background-color: var(--background-2);
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  & > object {
+    width: 35%;
+    height: auto;
+  }
+
+  .hey {
+    order: -1;
+    align-self: center;
+
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    // flex: 1;
+    .first-presentation {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: auto;
+      flex-grow: 3;
+      p {
+        align-self: center;
+      }
+      text-align: center;
+    }
+    .wrapper {
+      flex: 1;
+    }
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  h1 {
+    margin: 5px 0px;
+    color: var(--color);
+    size: 15em;
+  }
+
+  object {
+    margin-top: 20px;
+    align-self: center;
+  }
+}
