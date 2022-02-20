@@ -14,6 +14,9 @@
       </a>
     </div>
   </div>
+
+  <p class="titleProj">Some of my projects : </p>
+
   <div #repo id="repo-wrapper" class="card-repo cards-wrapper">
     <app-github-card *ngFor="let proj of visibleProjects;" [data]="proj" class="repo-card"
                      [ngsReveal]="{ delay: 300, interval: 200 }"></app-github-card>

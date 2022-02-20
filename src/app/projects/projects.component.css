@@ -1,0 +1,43 @@
+/*projet */
+#projet {
+  background-color: var(--background-2);
+}
+#projet .repo-card,
+#projet .card-grid-space {
+  align-self: center;
+}
+#projet .repo-card > div,
+#projet .card-grid-space > div {
+  max-width: 60%;
+  margin: auto;
+}
+#projet .block-proj {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#projet .block-proj .github {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#projet .block-proj .github img {
+  align-self: baseline;
+  margin: auto;
+  margin-top: 20px;
+  flex: 1;
+}
+#projet .titleProj {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 47px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  #projet .github {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=projects.component.css.map */

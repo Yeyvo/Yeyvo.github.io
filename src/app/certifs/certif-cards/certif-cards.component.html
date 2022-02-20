@@ -1,0 +1,10 @@
+<div class="card-grid-space">
+  <a class="card" href="{{data.link}}" style="background-color: #242020">
+    <div>
+      <h1>{{data.name}}</h1>
+      <div class="tags">
+        <div class="tag" *ngFor="let tag of data.tags">{{tag}}</div>
+      </div>
+    </div>
+  </a>
+</div>

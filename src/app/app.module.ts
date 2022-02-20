@@ -15,6 +15,8 @@ import {NgsRevealModule} from "ngx-scrollreveal";
 import {HttpClientModule} from "@angular/common/http";
 import { GithubCardComponent } from './github-card/github-card.component';
 import { ButtonComponent } from './button/button.component';
+import { CertifCardsComponent } from './certifs/certif-cards/certif-cards.component';
+import { TechComponent } from './tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ButtonComponent } from './button/button.component';
     EducationComponent,
     CertifsComponent,
     GithubCardComponent,
-    ButtonComponent
+    ButtonComponent,
+    CertifCardsComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,

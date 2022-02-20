@@ -27,6 +27,7 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": false,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "enableIvy": false
   }
 }

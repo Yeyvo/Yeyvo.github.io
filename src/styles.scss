@@ -1,9 +1,10 @@
-@import "assets/ressources/style/button.scss" ;
+@import "assets/ressources/style/button.scss";
 @import "assets/ressources/style/card.css";
 @import "assets/ressources/style/menu.scss";
 @import "assets/ressources/style/timeline.scss";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --color: rgb(108, 99, 255);
@@ -30,6 +31,7 @@
 a {
   text-decoration: none;
   transition: all 400ms ease;
+  color: inherit;
 }
 
 a:hover {
@@ -54,7 +56,9 @@ body {
   font-weight: 300;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
   background-color: var(--background-1);
-  //z-index: 2;
+  -webkit-user-select:none;
+  -moz-user-select:-moz-none;
+  -ms-user-select:none;user-select:none
 }
 
 html {
@@ -109,8 +113,6 @@ object {
 }
 
 
-
-
 /*Responsive*/
 
 
@@ -124,18 +126,22 @@ object {
   body {
     display: flex;
     flex-direction: column;
+
     .main {
       height: auto;
       min-height: auto;
       flex-direction: column;
       align-items: center;
+
       object {
         order: -1;
       }
+
       .wrapper {
         flex-direction: row;
       }
     }
+
     #hello {
       min-height: 50vh;
     }
@@ -178,6 +184,7 @@ object {
     }
   }
 }
+
 @media screen and (max-width: 500px) {
   .github {
     .account {

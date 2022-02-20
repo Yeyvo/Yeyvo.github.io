@@ -1,4 +1,5 @@
 @import "assets/ressources/style/card.css";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 :root {
   --color: rgb(108, 99, 255);
 }
@@ -388,6 +389,7 @@
 a {
   text-decoration: none;
   transition: all 400ms ease;
+  color: inherit;
 }
 
 a:hover {
@@ -411,6 +413,10 @@ body {
   font-weight: 300;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
   background-color: var(--background-1);
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {

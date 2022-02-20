@@ -1,0 +1,9 @@
+//@import "../../../assets/ressources/style/card.css";
+
+.card-grid-space {
+  & > a {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
