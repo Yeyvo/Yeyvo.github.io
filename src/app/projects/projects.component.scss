@@ -1,0 +1,38 @@
+/*projet */
+#projet {
+  background-color: var(--background-2);
+  .repo-card,
+  .card-grid-space {
+    & > div {
+      max-width: 60%;
+      margin: auto;
+    }
+    align-self: center;
+  }
+
+  .block-proj {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .github {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      img {
+        align-self: baseline;
+        margin: auto;
+        margin-top: 20px;
+        flex: 1;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  #projet {
+    .github {
+      flex-direction: column;
+    }
+  }
+}

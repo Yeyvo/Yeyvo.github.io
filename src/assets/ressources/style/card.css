@@ -157,16 +157,10 @@ a {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 @media screen and (max-width: 900px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr;
-  }
+
   .info {
     justify-content: center;
   }
@@ -177,9 +171,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .cards-wrapper {
-    padding: 4rem 2rem;
-  }
+
   .card {
     max-width: calc(100vw - 4rem);
   }
@@ -194,7 +186,5 @@ a {
     margin: 0;
     font-size: large;
   }
-  /* .cards-wrapper {
-    padding-right: 3em;
-  } */
+
 }
