@@ -10,6 +10,10 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { CertifsComponent } from './certifs/certifs.component';
+import {NgParticlesModule} from "ng-particles";
+import {NgsRevealModule} from "ngx-scrollreveal";
+import {HttpClientModule} from "@angular/common/http";
+import { GithubCardComponent } from './github-card/github-card.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { CertifsComponent } from './certifs/certifs.component';
     PresentationComponent,
     ProjectsComponent,
     EducationComponent,
-    CertifsComponent
+    CertifsComponent,
+    GithubCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgParticlesModule,
+    NgsRevealModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

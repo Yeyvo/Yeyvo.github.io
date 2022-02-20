@@ -1,7 +1,6 @@
 @import "assets/ressources/style/button.scss" ;
 @import "assets/ressources/style/card.css";
 @import "assets/ressources/style/menu.scss";
-@import "assets/ressources/style/particle.scss";
 @import "assets/ressources/style/timeline.scss";
 
 
@@ -49,11 +48,13 @@ a:hover {
 }
 
 body {
+  //overflow-x: hidden;
   margin: 0;
   color: white;
   font-weight: 300;
   font-family: "Fira Code", monospace, "Montserrat", sans-serif;
   background-color: var(--background-1);
+  //z-index: 2;
 }
 
 html {
@@ -222,4 +223,32 @@ object {
       height: calc(0.4 * 100px);
     }
   }
+}
+
+
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  /* .cards-wrapper {
+    padding-right: 3em;
+  } */
 }

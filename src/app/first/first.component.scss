@@ -1,7 +1,7 @@
 /* HELLO */
 
 #hello {
-  // position: relative;
+   position: relative;
   background-color: var(--background-2);
   display: flex;
   justify-content: space-around;
@@ -20,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     z-index: 5;
-    // flex: 1;
     .first-presentation {
       display: flex;
       flex-direction: column;
@@ -50,5 +49,37 @@
   object {
     margin-top: 20px;
     align-self: center;
+  }
+}
+
+
+/* ---- particle ---- */
+
+canvas {
+  display: block;
+  bottom: 0px;
+  z-index: -1;
+
+}
+
+#zeroParticles,
+#oneParticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1000px) {
+  #zeroParticles,
+  #oneParticles {
+    width: 100%;
+    height: 100%;
+    canvas {
+      padding-bottom: 90px;
+      margin-top: 25vh;
+    }
   }
 }

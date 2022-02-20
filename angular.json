@@ -101,7 +101,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/scrollreveal/dist/scrollreveal.js",
+              "../node_modules/particles.js/particles.js"
+            ]
           }
         }
       }

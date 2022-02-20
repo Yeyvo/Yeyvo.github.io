@@ -2,16 +2,16 @@
   <nav>
     <h1 id="logo">Portfolio</h1>
 
-    <div class="mobile-menu">
+    <div [ngClass]="{'active' : isActive}" class="mobile-menu" (click)="this.handleClickMenu()">
       <div class="ln-1"></div>
       <div class="ln-2"></div>
       <div class="ln-3"></div>
     </div>
-    <ul id="lst-nav">
-      <li><a href="#prese">Intro</a></li>
-      <li><a href="#projet">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certif">Certifications</a></li>
+    <ul [ngClass]="{'active' : isActive}" id="lst-nav">
+      <li #links (click)="this.handleClickLinks()" ><a href="#prese">Intro</a></li>
+      <li #links (click)="this.handleClickLinks()"><a href="#projet">Projects</a></li>
+      <li #links (click)="this.handleClickLinks()"><a href="#education">Education</a></li>
+      <li #links (click)="this.handleClickLinks()"><a href="#certif">Certifications</a></li>
     </ul>
   </nav>
 </header>
