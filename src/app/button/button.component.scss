@@ -1,0 +1,78 @@
+:root {
+  // --height: 100px;
+  // --width: 200px;
+  --color: rgb(108, 99, 255);
+}
+
+
+
+.button {
+  position: relative;
+  width: calc(0.8 * 200px);
+  height: calc(0.7 * 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 0.8rem;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2), 3px 8px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+
+  padding: 5px 10px;
+
+  background: rgba(0, 0, 0, 0);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background: rgba(0, 0, 0, 0);
+  }
+
+  span {
+    color: #fff;
+    font-size: 1rem;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .back {
+    position: absolute;
+    width: 0;
+    height: 0;
+    filter: url(#filter);
+    border-radius: 50%;
+    z-index: 5;
+    transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+  }
+
+  &._1 .back {
+    left: -50%;
+    top: -50%;
+    background: var(--color);
+  }
+
+  &:hover .back {
+    width: calc(2 * 200px);
+    height: calc(2 * 100px);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .button {
+    margin: 0.8rem 0;
+  }
+}
+
+// a {
+//   margin: 0 20px;
+//   color: #fff;
+//   font-size: 2rem;
+//   transition: all 400ms ease;
+// }

@@ -11,24 +11,10 @@
       <p class="fin" [ngsReveal]="{ delay: 200 }">a Computer Science Engineering Student @EMI</p>
     </div>
     <div class="wrapper">
-      <a href="https://www.linkedin.com/in/hamza-chafkan/">
-        <div class="button _1">
-          <span>
-            <img src="../assets/ressources/img/linkeding.png" alt="" style="height: 30px" class="img-hello"
-                 [ngsReveal]="{ delay: 400 }"/>
-          </span>
-          <div class="back"></div>
-        </div>
-      </a>
-      <a href="https://github.com/Yeyvo">
-        <div class="button _1">
-            <span>
-                <img src="../assets/ressources/img/github.png" alt="" style="height: 30px"
-                     class="img-hello" [ngsReveal]="{ delay: 400 }"/>
-            </span>
-          <div class="back"></div>
-        </div>
-      </a>
+
+      <app-button [data]="{isImage : true ,link: 'https://www.linkedin.com/in/hamza-chafkan/' , image:'linkeding.png', classList:['img-hello'] }"></app-button>
+      <app-button [data]="{isImage : true ,link: 'https://github.com/Yeyvo' , image:'github.png', classList:['img-hello'] }"></app-button>
+
     </div>
   </div>
 </div>

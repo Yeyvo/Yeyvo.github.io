@@ -11,22 +11,26 @@
       doing
     </p>
     <div class="wrapper">
-      <a href="https://www.linkedin.com/in/hamza-chafkan/">
-        <div class="button _1">
-          <span><img src="../assets/ressources/img/linkeding.png" alt="" style="height: 30px" /></span>
-          <div class="back"></div>
-        </div>
-      </a>
-      <div class="button _1">
-        <span><a href="#">Mon CV</a></span>
-        <div class="back"></div>
-      </div>
-      <a href="https://github.com/Yeyvo">
-        <div class="button _1">
-          <span><img src="../assets/ressources/img/github.png" alt="" style="height: 30px" /></span>
-          <div class="back"></div>
-        </div>
-      </a>
+<!--      <a href="https://www.linkedin.com/in/hamza-chafkan/">-->
+<!--        <div class="button _1">-->
+<!--          <span><img src="../assets/ressources/img/linkeding.png" alt="" style="height: 30px" /></span>-->
+<!--          <div class="back"></div>-->
+<!--        </div>-->
+<!--      </a>-->
+      <app-button [data]="{isImage : true ,link: 'https://www.linkedin.com/in/hamza-chafkan/' , image:'linkeding.png', classList:[''] }"></app-button>
+      <app-button [data]="{isImage : false ,link: '#' , txt:'Mon CV', classList:[''] }"></app-button>
+      <app-button [data]="{isImage : true ,link: 'https://github.com/Yeyvo' , image:'github.png', classList:[''] }"></app-button>
+
+<!--      <div class="button _1">-->
+<!--        <span><a href="#">Mon CV</a></span>-->
+<!--        <div class="back"></div>-->
+<!--      </div>-->
+<!--      <a href="https://github.com/Yeyvo">-->
+<!--        <div class="button _1">-->
+<!--          <span><img src="../assets/ressources/img/github.png" alt="" style="height: 30px" /></span>-->
+<!--          <div class="back"></div>-->
+<!--        </div>-->
+<!--      </a>-->
     </div>
   </div>
 </div>

@@ -1,0 +1,10 @@
+<a href="{{data.link}}">
+  <div class="button _1">
+          <span>
+            <img *ngIf="data.isImage"  src="../assets/ressources/img/{{data.image}}" alt="" style="height: 30px" class="{{classes}}"
+                 [ngsReveal]="{ delay: 400 }"/>
+            <p *ngIf="!data.isImage" >{{data.txt}}</p>
+          </span>
+    <div class="back"></div>
+  </div>
+</a>

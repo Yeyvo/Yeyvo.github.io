@@ -14,6 +14,7 @@ import {NgParticlesModule} from "ng-particles";
 import {NgsRevealModule} from "ngx-scrollreveal";
 import {HttpClientModule} from "@angular/common/http";
 import { GithubCardComponent } from './github-card/github-card.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GithubCardComponent } from './github-card/github-card.component';
     ProjectsComponent,
     EducationComponent,
     CertifsComponent,
-    GithubCardComponent
+    GithubCardComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

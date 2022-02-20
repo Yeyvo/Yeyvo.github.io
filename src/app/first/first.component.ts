@@ -8,6 +8,7 @@ import {Container, Main, particlesJS} from "tsparticles";
 })
 export class FirstComponent implements OnInit {
 
+
   particlesOptions = {
     fullScreen: {
       enable: false,
@@ -76,7 +77,7 @@ export class FirstComponent implements OnInit {
   id1 = "oneParticles";
   one = this.editParticles(this.particlesOptions, "../assets/ressources/img/number-1.png", 10, 50);
   zero = this.editParticles(this.particlesOptions, "../assets/ressources/img/number-0.png", 25, 30);
-  myStyle: any;
+
 
   constructor() {
   }
