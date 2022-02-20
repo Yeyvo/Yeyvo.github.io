@@ -2,7 +2,7 @@
 
 :root {
   --color: rgb(108, 99, 255);
-  --transition-time: 0.5s;
+  --transition-time: 1s;
 }
 
 /* * {
@@ -16,9 +16,7 @@ body {
   background: #fafafa;
 } */
 
-a {
-  color: inherit;
-}
+
 
 .card {
   font-family: "Heebo";
