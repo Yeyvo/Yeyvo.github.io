@@ -17,6 +17,7 @@ import { GithubCardComponent } from './github-card/github-card.component';
 import { ButtonComponent } from './button/button.component';
 import { CertifCardsComponent } from './certifs/certif-cards/certif-cards.component';
 import { TechComponent } from './tech/tech.component';
+import {SkillComponent} from "./skills/skill/skill.component";
 
 @NgModule({
   declarations: [
@@ -31,15 +32,16 @@ import { TechComponent } from './tech/tech.component';
     GithubCardComponent,
     ButtonComponent,
     CertifCardsComponent,
-    TechComponent
+    TechComponent,
+    SkillComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgParticlesModule,
-    NgsRevealModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgParticlesModule,
+        NgsRevealModule,
+        HttpClientModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

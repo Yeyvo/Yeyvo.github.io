@@ -20,6 +20,8 @@ export class AppComponent implements OnInit {
     });
   }
 
+
+
   constructor(revealConfig: NgsRevealConfig) {
     revealConfig.origin = "top"
     revealConfig.distance = "50px"

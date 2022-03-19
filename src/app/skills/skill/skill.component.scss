@@ -1,0 +1,75 @@
+#skills {
+  padding: 64px;
+  background-color: var(--background-2);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .titleProj {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 47px;
+    margin-bottom: 40px;
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(min(100%/3, max(64px, 100%/5)), 1fr) );
+    //grid-template-rows: repeat(5, 1fr);
+    //grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    //grid-colum
+    width: 80%;
+    justify-items: center;
+    .case {
+      //width: 64px;
+      //height: 64px;
+      max-width: 40%;
+      //display: flex;
+      //align-content: center;
+      //justify-content: center;
+      //align-items: center;
+      //flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      .base:hover {
+        //fill: black;
+        filter: grayscale(100%);
+        transition: 0.7s;
+      }
+
+      .base {
+        //filter:  drop-shadow(4px 4px 5px black);
+        transition: .7s;
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(70px, 1fr)) ;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(70px, 1fr)) ;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+
+  }
+}

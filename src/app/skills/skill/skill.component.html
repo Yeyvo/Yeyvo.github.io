@@ -1,0 +1,9 @@
+<div id="skills">
+  <p class="titleProj">skills : </p>
+
+  <div class="grid-container">
+    <div *ngFor="let skill of skills" class="case" [ngsReveal]="{ delay: 400 }">
+      <img [src]="baseUrl+skill" class="base" alt="logo-skill">
+    </div>
+  </div>
+</div>
